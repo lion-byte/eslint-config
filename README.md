@@ -1,5 +1,5 @@
 # @lionbyte/eslint-config
 
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Build Status](https://travis-ci.com/lion-byte/eslint-config.svg?branch=master)](https://travis-ci.com/lion-byte/eslint-config)
 
-ESLint config for personal projects
+ESLint config for personal projects.
