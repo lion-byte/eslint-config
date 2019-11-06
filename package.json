@@ -1,27 +1,29 @@
 {
   "name": "@lionbyte/eslint-config",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "description": "ESLint config for personal projects",
   "scripts": {
     "format": "npm run prettier && npm run lint -- --fix",
     "lint": "eslint --ignore-path .gitignore .",
     "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|yml|yaml|css|less|ts|md|graphql|mdx)\"",
     "start": "node .",
-    "test": "npm run lint && jest --coverage"
+    "test": "npm run lint && jest --coverage",
+    "semantic-release": "semantic-release"
   },
   "license": "MIT",
   "main": "index.js",
   "author": "Mark Hernandez <mark@lion-byte.com>",
   "repository": {
     "type": "git",
-    "url": "git@github.com:lion-byte/eslint-config.git"
+    "url": "https://github.com/lion-byte/eslint-config.git"
   },
   "devDependencies": {
     "eslint": "^6.6.0",
     "husky": "^3.0.9",
     "jest": "^24.9.0",
     "lint-staged": "^9.4.2",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "semantic-release": "^15.13.30"
   },
   "dependencies": {
     "eslint-config-standard": "^14.1.0",
