@@ -17,6 +17,9 @@
     "type": "git",
     "url": "https://github.com/lion-byte/eslint-config.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "eslint": "^6.6.0",
     "husky": "^3.0.9",
