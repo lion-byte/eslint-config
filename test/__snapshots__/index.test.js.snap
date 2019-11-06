@@ -4,6 +4,7 @@ exports[`ESLint configuration should exist 1`] = `
 Object {
   "extends": Array [
     "plugin:jest/recommended",
+    "plugin:jsx-a11y/recommended",
     "standard",
     "standard-jsx",
   ],
@@ -25,6 +26,8 @@ Object {
         "avoidEscape": true,
       },
     ],
+    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/rules-of-hooks": "error",
     "react/jsx-fragments": "off",
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",

@@ -1,5 +1,10 @@
 {
-  "extends": ["plugin:jest/recommended", "standard", "standard-jsx"],
+  "extends": [
+    "plugin:jest/recommended",
+    "plugin:jsx-a11y/recommended",
+    "standard",
+    "standard-jsx"
+  ],
   "plugins": ["jest", "jsx-a11y", "react-hooks"],
   "parserOptions": {
     "ecmaVersion": 11
@@ -13,6 +18,8 @@
     ],
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
-    "react/jsx-fragments": "off"
+    "react/jsx-fragments": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   }
 }
