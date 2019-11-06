@@ -1,0 +1,12 @@
+{
+  "extends": ["plugin:jest/recommended", "standard", "standard-jsx"],
+  "plugins": ["jest", "jsx-a11y", "react-hooks"],
+  "parserOptions": {
+    "ecmaVersion": 11
+  },
+  "rules": {
+    "no-var": "error",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error"
+  }
+}
