@@ -17,6 +17,15 @@ Object {
   ],
   "rules": Object {
     "no-var": "error",
+    "quotes": Array [
+      "error",
+      "single",
+      Object {
+        "allowTemplateLiterals": true,
+        "avoidEscape": true,
+      },
+    ],
+    "react/jsx-fragments": "off",
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
   },
