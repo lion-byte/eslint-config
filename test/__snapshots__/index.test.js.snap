@@ -8,6 +8,7 @@ Object {
     "standard",
     "standard-jsx",
   ],
+  "parser": "babel-eslint",
   "parserOptions": Object {
     "ecmaVersion": 11,
   },
@@ -31,6 +32,11 @@ Object {
     "react/jsx-fragments": "off",
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
+  },
+  "settings": Object {
+    "react": Object {
+      "version": "latest",
+    },
   },
 }
 `;

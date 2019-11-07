@@ -6,6 +6,7 @@
     "standard-jsx"
   ],
   "plugins": ["jest", "jsx-a11y", "react-hooks"],
+  "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 11
   },
@@ -21,5 +22,10 @@
     "react/jsx-fragments": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn"
+  },
+  "settings": {
+    "react": {
+      "version": "latest"
+    }
   }
 }
