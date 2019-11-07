@@ -1,6 +1,6 @@
 {
   "name": "@lionbyte/eslint-config",
-  "version": "0.0.0-development",
+  "version": "1.2.0",
   "description": "ESLint config for personal projects",
   "scripts": {
     "format": "npm run prettier && npm run lint -- --fix",
