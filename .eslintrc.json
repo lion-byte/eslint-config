@@ -11,6 +11,14 @@
     "ecmaVersion": 11
   },
   "rules": {
+    "arrow-body-style": "error",
+    "curly": ["error", "all"],
+    "max-statements-per-line": "error",
+    "no-multiple-empty-lines": [
+      "error",
+      { "maxBOF": 0, "max": 1, "maxEOF": 0 }
+    ],
+    "no-undefined": "error",
     "no-var": "error",
     "quotes": [
       "error",

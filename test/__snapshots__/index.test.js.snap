@@ -18,6 +18,21 @@ Object {
     "react-hooks",
   ],
   "rules": Object {
+    "arrow-body-style": "error",
+    "curly": Array [
+      "error",
+      "all",
+    ],
+    "max-statements-per-line": "error",
+    "no-multiple-empty-lines": Array [
+      "error",
+      Object {
+        "max": 1,
+        "maxBOF": 0,
+        "maxEOF": 0,
+      },
+    ],
+    "no-undefined": "error",
     "no-var": "error",
     "quotes": Array [
       "error",
