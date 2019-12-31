@@ -12,6 +12,7 @@
   },
   "rules": {
     "arrow-body-style": "error",
+    "arrow-parens": ["error", "as-needed"],
     "curly": ["error", "all"],
     "max-statements-per-line": "error",
     "no-multiple-empty-lines": [

@@ -19,6 +19,10 @@ Object {
   ],
   "rules": Object {
     "arrow-body-style": "error",
+    "arrow-parens": Array [
+      "error",
+      "as-needed",
+    ],
     "curly": Array [
       "error",
       "all",
