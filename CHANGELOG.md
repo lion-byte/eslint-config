@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/lion-byte/eslint-config/compare/v1.3.0...v1.4.0) (2019-12-31)
+
+
+### Features
+
+* add arrow-parens rule ([c20a298](https://github.com/lion-byte/eslint-config/commit/c20a29833826be5714c119101536396d009ec53e))
+
 # [1.3.0](https://github.com/lion-byte/eslint-config/compare/v1.2.0...v1.3.0) (2019-12-29)
 
 
