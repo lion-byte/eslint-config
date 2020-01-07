@@ -38,6 +38,25 @@ Object {
     ],
     "no-undefined": "error",
     "no-var": "error",
+    "padding-line-between-statements": Array [
+      "error",
+      Object {
+        "blankLine": "always",
+        "next": "*",
+        "prev": Array [
+          "block",
+          "block-like",
+        ],
+      },
+      Object {
+        "blankLine": "always",
+        "next": Array [
+          "block",
+          "block-like",
+        ],
+        "prev": "*",
+      },
+    ],
     "quotes": Array [
       "error",
       "single",
