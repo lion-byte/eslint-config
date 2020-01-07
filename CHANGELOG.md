@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/lion-byte/eslint-config/compare/v1.4.0...v1.5.0) (2020-01-07)
+
+
+### Features
+
+* add padding-line-between-statements rule for lines around blocks ([8df0fc4](https://github.com/lion-byte/eslint-config/commit/8df0fc4023a32eff908eade6a1acce3b5590c8ae))
+
 # [1.4.0](https://github.com/lion-byte/eslint-config/compare/v1.3.0...v1.4.0) (2019-12-31)
 
 
