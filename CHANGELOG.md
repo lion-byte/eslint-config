@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/lion-byte/eslint-config/compare/v1.5.0...v1.6.0) (2020-01-22)
+
+
+### Features
+
+* update packages and add `eslint-plugin-import` ([1ef2ae8](https://github.com/lion-byte/eslint-config/commit/1ef2ae8bbefbe2a7849ec12bc42aa85fc9c5b670))
+
 # [1.5.0](https://github.com/lion-byte/eslint-config/compare/v1.4.0...v1.5.0) (2020-01-07)
 
 
