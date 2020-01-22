@@ -2,6 +2,10 @@
 
 exports[`ESLint configuration should exist 1`] = `
 Object {
+  "env": Object {
+    "browser": true,
+    "node": true,
+  },
   "extends": Array [
     "plugin:jest/recommended",
     "plugin:jsx-a11y/recommended",
@@ -13,6 +17,7 @@ Object {
     "ecmaVersion": 11,
   },
   "plugins": Array [
+    "import",
     "jest",
     "jsx-a11y",
     "react-hooks",
@@ -27,6 +32,10 @@ Object {
       "error",
       "all",
     ],
+    "import/dynamic-import-chunkname": "error",
+    "import/newline-after-import": "error",
+    "import/no-mutable-exports": "error",
+    "import/order": "error",
     "max-statements-per-line": "error",
     "no-multiple-empty-lines": Array [
       "error",
