@@ -12,7 +12,10 @@
   "rules": {
     "arrow-body-style": "error",
     "arrow-parens": ["error", "as-needed"],
+    "class-methods-use-this": "warn",
+    "consistent-return": "error",
     "curly": ["error", "all"],
+    "lines-between-class-members": "error",
     "max-statements-per-line": "error",
     "no-multiple-empty-lines": [
       "error",
@@ -22,18 +25,47 @@
     "no-var": "error",
     "padding-line-between-statements": [
       "error",
-      { "blankLine": "always", "prev": ["block", "block-like"], "next": "*" },
-      { "blankLine": "always", "prev": "*", "next": ["block", "block-like"] }
+      {
+        "blankLine": "always",
+        "prev": ["block", "block-like", "class", "export"],
+        "next": "*"
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": ["block", "block-like", "class", "export"]
+      },
+      { "blankLine": "always", "prev": "expression", "next": ["const", "let"] }
     ],
     "quotes": [
       "error",
       "single",
       { "avoidEscape": true, "allowTemplateLiterals": true }
     ],
+    "require-await": "error",
+    "sort-imports": [
+      "error",
+      { "ignoreCase": true, "ignoreDeclarationSort": true }
+    ],
+
     "import/dynamic-import-chunkname": "error",
     "import/newline-after-import": "error",
     "import/no-mutable-exports": "error",
-    "import/order": "error",
+    "import/order": [
+      "error",
+      {
+        "alphabetize": { "caseInsensitive": true, "order": "asc" },
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "newlines-between": "always"
+      }
+    ],
     "react/jsx-fragments": "off",
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",

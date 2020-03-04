@@ -28,6 +28,8 @@ Object {
       "error",
       "as-needed",
     ],
+    "class-methods-use-this": "warn",
+    "consistent-return": "error",
     "curly": Array [
       "error",
       "all",
@@ -35,7 +37,25 @@ Object {
     "import/dynamic-import-chunkname": "error",
     "import/newline-after-import": "error",
     "import/no-mutable-exports": "error",
-    "import/order": "error",
+    "import/order": Array [
+      "error",
+      Object {
+        "alphabetize": Object {
+          "caseInsensitive": true,
+          "order": "asc",
+        },
+        "groups": Array [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+        ],
+        "newlines-between": "always",
+      },
+    ],
+    "lines-between-class-members": "error",
     "max-statements-per-line": "error",
     "no-multiple-empty-lines": Array [
       "error",
@@ -55,6 +75,8 @@ Object {
         "prev": Array [
           "block",
           "block-like",
+          "class",
+          "export",
         ],
       },
       Object {
@@ -62,8 +84,18 @@ Object {
         "next": Array [
           "block",
           "block-like",
+          "class",
+          "export",
         ],
         "prev": "*",
+      },
+      Object {
+        "blankLine": "always",
+        "next": Array [
+          "const",
+          "let",
+        ],
+        "prev": "expression",
       },
     ],
     "quotes": Array [
@@ -79,6 +111,14 @@ Object {
     "react/jsx-fragments": "off",
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
+    "require-await": "error",
+    "sort-imports": Array [
+      "error",
+      Object {
+        "ignoreCase": true,
+        "ignoreDeclarationSort": true,
+      },
+    ],
   },
   "settings": Object {
     "react": Object {
