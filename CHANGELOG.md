@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/lion-byte/eslint-config/compare/v1.6.0...v1.7.0) (2020-03-04)
+
+
+### Features
+
+* add more spacing-related rules and other warnings ([cecdab2](https://github.com/lion-byte/eslint-config/commit/cecdab296eb6ef86ddd5f5eaef2449ffee7fa165))
+
 # [1.6.0](https://github.com/lion-byte/eslint-config/compare/v1.5.0...v1.6.0) (2020-01-22)
 
 
