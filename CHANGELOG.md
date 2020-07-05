@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/lion-byte/eslint-config/compare/v1.7.0...v1.8.0) (2020-07-05)
+
+
+### Features
+
+* **eslint:** turn off jsx-a11y/no-onchange ([1072e40](https://github.com/lion-byte/eslint-config/commit/1072e404c470c2248e6a5b43e8f1391b80ca504a))
+
 # [1.7.0](https://github.com/lion-byte/eslint-config/compare/v1.6.0...v1.7.0) (2020-03-04)
 
 
