@@ -66,6 +66,7 @@
         "newlines-between": "always"
       }
     ],
+    "jsx-a11y/no-onchange": "off",
     "react/jsx-fragments": "off",
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",

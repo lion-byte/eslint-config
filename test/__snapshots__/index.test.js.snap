@@ -55,6 +55,7 @@ Object {
         "newlines-between": "always",
       },
     ],
+    "jsx-a11y/no-onchange": "off",
     "lines-between-class-members": "error",
     "max-statements-per-line": "error",
     "no-multiple-empty-lines": Array [
