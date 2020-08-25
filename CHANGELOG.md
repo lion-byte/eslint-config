@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/lion-byte/eslint-config/compare/v1.8.0...v1.8.1) (2020-08-25)
+
+
+### Bug Fixes
+
+* remove `eslint-config-standard` dependency ([f2ba38c](https://github.com/lion-byte/eslint-config/commit/f2ba38c43f722caacdfa29c63f4b1dd34ff8c3aa))
+
 # [1.8.0](https://github.com/lion-byte/eslint-config/compare/v1.7.0...v1.8.0) (2020-07-05)
 
 
