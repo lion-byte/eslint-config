@@ -1,3 +1,10 @@
+## [1.8.2](https://github.com/lion-byte/eslint-config/compare/v1.8.1...v1.8.2) (2020-08-27)
+
+
+### Bug Fixes
+
+* enable other eslint `env` options ([3928b02](https://github.com/lion-byte/eslint-config/commit/3928b02a888e2222c78122b42bede3d6888850c1))
+
 ## [1.8.1](https://github.com/lion-byte/eslint-config/compare/v1.8.0...v1.8.1) (2020-08-25)
 
 
