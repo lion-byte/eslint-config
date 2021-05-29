@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/lion-byte/eslint-config/compare/v1.8.2...v1.9.0) (2021-05-29)
+
+
+### Features
+
+* update parser to @babel/eslint-parser ([9167397](https://github.com/lion-byte/eslint-config/commit/9167397192925963afb6bdf06a63401dfaf733b6))
+
 ## [1.8.2](https://github.com/lion-byte/eslint-config/compare/v1.8.1...v1.8.2) (2020-08-27)
 
 
