@@ -14,9 +14,10 @@
     "plugin:jsx-a11y/recommended"
   ],
   "plugins": ["import", "jest", "jsx-a11y", "promise", "react", "react-hooks"],
-  "parser": "babel-eslint",
+  "parser": "@babel/eslint-parser",
   "parserOptions": {
     "ecmaFeatures": { "ecmaVersion": 11, "jsx": true },
+    "requireConfigFile": false,
     "sourceType": "module"
   },
   "rules": {

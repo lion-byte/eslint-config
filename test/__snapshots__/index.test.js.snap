@@ -16,12 +16,13 @@ Object {
     "plugin:jest/recommended",
     "plugin:jsx-a11y/recommended",
   ],
-  "parser": "babel-eslint",
+  "parser": "@babel/eslint-parser",
   "parserOptions": Object {
     "ecmaFeatures": Object {
       "ecmaVersion": 11,
       "jsx": true,
     },
+    "requireConfigFile": false,
     "sourceType": "module",
   },
   "plugins": Array [
