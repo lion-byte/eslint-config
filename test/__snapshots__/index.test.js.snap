@@ -13,10 +13,16 @@ Object {
   },
   "extends": Array [
     "eslint:recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
     "plugin:jest/recommended",
     "plugin:jsx-a11y/recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended",
+    "prettier",
   ],
-  "parser": "@babel/eslint-parser",
+  "parser": "@typescript-eslint/parser",
   "parserOptions": Object {
     "ecmaFeatures": Object {
       "ecmaVersion": 11,
@@ -26,38 +32,14 @@ Object {
     "sourceType": "module",
   },
   "plugins": Array [
+    "@typescript-eslint",
     "import",
     "jest",
     "jsx-a11y",
-    "promise",
     "react",
     "react-hooks",
   ],
   "rules": Object {
-    "array-bracket-spacing": "error",
-    "array-callback-return": "error",
-    "arrow-body-style": Array [
-      "error",
-      "as-needed",
-    ],
-    "arrow-parens": Array [
-      "error",
-      "as-needed",
-    ],
-    "brace-style": "error",
-    "camelcase": "error",
-    "class-methods-use-this": "warn",
-    "comma-dangle": "error",
-    "comma-spacing": "error",
-    "consistent-return": "error",
-    "curly": "error",
-    "default-param-last": "error",
-    "eol-last": "error",
-    "eqeqeq": "error",
-    "func-call-spacing": "error",
-    "guard-for-in": "error",
-    "handle-callback-err": "error",
-    "import/dynamic-import-chunkname": "error",
     "import/newline-after-import": "error",
     "import/no-dynamic-require": "error",
     "import/no-mutable-exports": "error",
@@ -79,83 +61,15 @@ Object {
         "newlines-between": "always",
       },
     ],
-    "indent": Array [
-      "error",
-      2,
-      Object {
-        "SwitchCase": 1,
-      },
-    ],
     "jsx-a11y/no-onchange": "off",
-    "key-spacing": "error",
-    "keyword-spacing": "error",
-    "line-comment-position": "error",
-    "lines-between-class-members": "error",
-    "max-depth": Array [
-      "error",
-      3,
-    ],
-    "max-len": "error",
-    "max-statements-per-line": "error",
-    "no-alert": "error",
-    "no-bitwise": "error",
-    "no-delete-var": "error",
-    "no-dupe-else-if": "error",
-    "no-empty": "off",
-    "no-eval": "error",
-    "no-extend-native": "error",
-    "no-extra-bind": "error",
-    "no-extra-boolean-cast": "error",
-    "no-extra-parens": "error",
-    "no-invalid-this": "error",
-    "no-labels": "error",
-    "no-multi-spaces": "error",
-    "no-multiple-empty-lines": Array [
-      "error",
-      Object {
-        "max": 1,
-        "maxBOF": 0,
-        "maxEOF": 0,
-      },
-    ],
-    "no-new-wrappers": "error",
-    "no-param-reassign": "error",
-    "no-prototype-builtins": "off",
-    "no-return-await": "error",
-    "no-sequences": "error",
-    "no-trailing-spaces": "error",
-    "no-undefined": "error",
-    "no-unmodified-loop-condition": "error",
-    "no-unused-expressions": "error",
-    "no-unused-vars": Array [
-      "error",
-      Object {
-        "args": "none",
-      },
-    ],
-    "no-useless-constructor": "error",
-    "no-useless-return": "error",
     "no-var": "error",
-    "no-void": "error",
     "no-whitespace-before-property": "error",
-    "object-curly-spacing": Array [
-      "error",
-      "always",
-    ],
     "object-shorthand": Array [
       "error",
       "always",
       Object {
         "avoidQuotes": true,
       },
-    ],
-    "one-var": Array [
-      "error",
-      "never",
-    ],
-    "padded-blocks": Array [
-      "error",
-      "never",
     ],
     "padding-line-between-statements": Array [
       "error",
@@ -188,8 +102,6 @@ Object {
         "prev": "expression",
       },
     ],
-    "prefer-const": "error",
-    "promise/param-names": "error",
     "quote-props": Array [
       "error",
       "as-needed",
@@ -204,97 +116,7 @@ Object {
         "allowTemplateLiterals": true,
       },
     ],
-    "react-hooks/exhaustive-deps": "warn",
-    "react-hooks/rules-of-hooks": "error",
-    "react/jsx-boolean-value": "error",
-    "react/jsx-closing-bracket-location": Array [
-      "error",
-      "tag-aligned",
-    ],
-    "react/jsx-closing-tag-location": "error",
-    "react/jsx-curly-brace-presence": Array [
-      "error",
-      Object {
-        "children": "never",
-        "props": "never",
-      },
-    ],
-    "react/jsx-curly-newline": Array [
-      "error",
-      Object {
-        "multiline": "consistent",
-        "singleline": "consistent",
-      },
-    ],
-    "react/jsx-curly-spacing": Array [
-      "error",
-      Object {
-        "allowMultiline": true,
-        "attributes": Object {
-          "when": "never",
-        },
-        "children": Object {
-          "when": "never",
-        },
-      },
-    ],
-    "react/jsx-equals-spacing": Array [
-      "error",
-      "never",
-    ],
-    "react/jsx-first-prop-new-line": Array [
-      "error",
-      "multiline-multiprop",
-    ],
-    "react/jsx-indent": Array [
-      "error",
-      2,
-      Object {
-        "checkAttributes": true,
-        "indentLogicalExpressions": true,
-      },
-    ],
-    "react/jsx-indent-props": Array [
-      "error",
-      2,
-    ],
-    "react/jsx-key": "error",
-    "react/jsx-no-comment-textnodes": "error",
-    "react/jsx-no-duplicate-props": "error",
-    "react/jsx-no-target-blank": Array [
-      "error",
-      Object {
-        "enforceDynamicLinks": "always",
-      },
-    ],
-    "react/jsx-no-undef": "error",
-    "react/jsx-pascal-case": Array [
-      "error",
-      Object {
-        "allowAllCaps": false,
-      },
-    ],
-    "react/jsx-props-no-multi-spaces": "error",
-    "react/jsx-tag-spacing": Array [
-      "error",
-      Object {
-        "afterOpening": "never",
-        "beforeClosing": "never",
-        "beforeSelfClosing": "always",
-        "closingSlash": "never",
-      },
-    ],
-    "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error",
-    "react/react-in-jsx-scope": "error",
     "react/self-closing-comp": "error",
-    "require-await": "error",
-    "semi": Array [
-      "error",
-      "never",
-    ],
-    "semi-spacing": "error",
-    "semi-style": "error",
     "sort-imports": Array [
       "error",
       Object {
@@ -302,12 +124,6 @@ Object {
         "ignoreDeclarationSort": true,
       },
     ],
-    "space-before-blocks": "error",
-    "space-before-function-paren": "error",
-    "space-in-parens": "error",
-    "space-infix-ops": "error",
-    "spaced-comment": "error",
-    "switch-colon-spacing": "error",
   },
   "settings": Object {
     "react": Object {
