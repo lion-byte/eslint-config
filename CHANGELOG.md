@@ -1,3 +1,18 @@
+# [2.0.0-next.1](https://github.com/lion-byte/eslint-config/compare/v1.9.0...v2.0.0-next.1) (2021-12-11)
+
+
+### Features
+
+* drop many rules and defer to recommended/prettier ([4b88ddf](https://github.com/lion-byte/eslint-config/commit/4b88ddfeb7dbca29f9c7fa8987443a2167f7b590))
+
+
+### BREAKING CHANGES
+
+* Require Node.js >= 14.17.4
+* Require ESLint >= 8
+* Dropped `eslint-plugin-promise`
+* Move `dependencies` to `peer-dependencies`
+
 # [1.9.0](https://github.com/lion-byte/eslint-config/compare/v1.8.2...v1.9.0) (2021-05-29)
 
 
