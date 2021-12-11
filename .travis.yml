@@ -1,8 +1,8 @@
 language: node_js
 
 node_js:
+  - 16
   - 14
-  - 12
 
 install:
   - npm ci
@@ -21,4 +21,6 @@ jobs:
         skip_cleanup: true
         script: npm run semantic-release
         on:
-          branch: main
+          branch:
+            - main
+            - next
