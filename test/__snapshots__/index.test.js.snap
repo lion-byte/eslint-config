@@ -20,7 +20,18 @@ Object {
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
     "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended",
     "prettier",
+  ],
+  "overrides": Array [
+    Object {
+      "files": Array [
+        "*.js",
+      ],
+      "rules": Object {
+        "@typescript-eslint/no-var-requires": "off",
+      },
+    },
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": Object {
@@ -43,6 +54,7 @@ Object {
     "import/newline-after-import": "error",
     "import/no-dynamic-require": "error",
     "import/no-mutable-exports": "error",
+    "import/no-unresolved": "off",
     "import/order": Array [
       "error",
       Object {

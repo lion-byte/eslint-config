@@ -17,6 +17,7 @@
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
     "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended",
     "prettier"
   ],
   "plugins": [
@@ -60,6 +61,7 @@
     "import/newline-after-import": "error",
     "import/no-dynamic-require": "error",
     "import/no-mutable-exports": "error",
+    "import/no-unresolved": "off",
     "import/order": [
       "error",
       {
@@ -78,5 +80,13 @@
     "jsx-a11y/no-onchange": "off",
     "react/self-closing-comp": "error"
   },
+  "overrides": [
+    {
+      "files": ["*.js"],
+      "rules": {
+        "@typescript-eslint/no-var-requires": "off"
+      }
+    }
+  ],
   "settings": { "react": { "version": "latest" } }
 }
