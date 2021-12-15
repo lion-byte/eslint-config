@@ -1,3 +1,10 @@
+# [2.0.0-next.2](https://github.com/lion-byte/eslint-config/compare/v2.0.0-next.1...v2.0.0-next.2) (2021-12-15)
+
+
+### Features
+
+* add `@typescript-eslint/recommended` rules ([6d33824](https://github.com/lion-byte/eslint-config/commit/6d3382419b0c1fce5553a90e75fe1f083f65db57))
+
 # [2.0.0-next.1](https://github.com/lion-byte/eslint-config/compare/v1.9.0...v2.0.0-next.1) (2021-12-11)
 
 
