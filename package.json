@@ -7,7 +7,7 @@
     "lint": "eslint --ignore-path .gitignore .",
     "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|yml|yaml|css|less|ts|md|graphql|mdx)\"",
     "start": "node .",
-    "test": "npm run lint && jest --coverage",
+    "test": "npm run lint && node --test",
     "semantic-release": "semantic-release",
     "prepare": "husky"
   },
@@ -21,6 +21,12 @@
   "publishConfig": {
     "access": "public"
   },
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./index.js"
+    }
+  },
   "engines": {
     "node": ">=22.21.1"
   },
@@ -32,13 +38,11 @@
     "eslint": "^8.4.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jest": "^25.3.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-react": "^7.27.1",
     "eslint-plugin-react-hooks": "^4.3.0",
     "husky": "^9.1.7",
-    "jest": "^27.4.3",
     "lint-staged": "^16.2.7",
     "prettier": "^3.8.1",
     "semantic-release": "^25.0.3",
@@ -50,7 +54,6 @@
     "eslint": ">=8.0.0",
     "eslint-config-prettier": ">=8.3.0",
     "eslint-plugin-import": ">=2.25.3",
-    "eslint-plugin-jest": ">=25.3.0",
     "eslint-plugin-jsx-a11y": ">=6.5.1",
     "eslint-plugin-node": ">=11.1.0",
     "eslint-plugin-react": ">=7.27.1",

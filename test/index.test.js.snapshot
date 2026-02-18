@@ -1,3 +1,4 @@
+exports[`ESLint configuration > should exist 1`] = `
 {
   "env": {
     "browser": true,
@@ -28,33 +29,74 @@
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaFeatures": { "ecmaVersion": 11, "jsx": true },
+    "ecmaFeatures": {
+      "ecmaVersion": 11,
+      "jsx": true
+    },
     "requireConfigFile": false,
     "sourceType": "module"
   },
   "rules": {
     "no-var": "error",
     "no-whitespace-before-property": "error",
-    "object-shorthand": ["error", "always", { "avoidQuotes": true }],
+    "object-shorthand": [
+      "error",
+      "always",
+      {
+        "avoidQuotes": true
+      }
+    ],
     "padding-line-between-statements": [
       "error",
       {
         "blankLine": "always",
-        "prev": ["block", "block-like", "class", "export"],
+        "prev": [
+          "block",
+          "block-like",
+          "class",
+          "export"
+        ],
         "next": "*"
       },
       {
         "blankLine": "always",
         "prev": "*",
-        "next": ["block", "block-like", "class", "export"]
+        "next": [
+          "block",
+          "block-like",
+          "class",
+          "export"
+        ]
       },
-      { "blankLine": "always", "prev": "expression", "next": ["const", "let"] }
+      {
+        "blankLine": "always",
+        "prev": "expression",
+        "next": [
+          "const",
+          "let"
+        ]
+      }
     ],
-    "quote-props": ["error", "as-needed", { "keywords": true }],
-    "quotes": ["error", "single", { "allowTemplateLiterals": true }],
+    "quote-props": [
+      "error",
+      "as-needed",
+      {
+        "keywords": true
+      }
+    ],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "allowTemplateLiterals": true
+      }
+    ],
     "sort-imports": [
       "error",
-      { "ignoreCase": true, "ignoreDeclarationSort": true }
+      {
+        "ignoreCase": true,
+        "ignoreDeclarationSort": true
+      }
     ],
     "import/newline-after-import": "error",
     "import/no-dynamic-require": "error",
@@ -63,7 +105,10 @@
     "import/order": [
       "error",
       {
-        "alphabetize": { "caseInsensitive": true, "order": "asc" },
+        "alphabetize": {
+          "caseInsensitive": true,
+          "order": "asc"
+        },
         "groups": [
           "builtin",
           "external",
@@ -80,11 +125,18 @@
   },
   "overrides": [
     {
-      "files": ["*.js"],
+      "files": [
+        "*.js"
+      ],
       "rules": {
         "@typescript-eslint/no-var-requires": "off"
       }
     }
   ],
-  "settings": { "react": { "version": "latest" } }
+  "settings": {
+    "react": {
+      "version": "latest"
+    }
+  }
 }
+`;

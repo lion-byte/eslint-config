@@ -1,3 +1,3 @@
-const config = require('./.eslintrc.json')
+import config from './.eslintrc.json' with { type: 'json' }
 
-module.exports = config
+export default config
