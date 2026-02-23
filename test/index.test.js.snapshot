@@ -1,44 +1,7 @@
 exports[`ESLint configuration > should exist 1`] = `
-{
-  "env": {
-    "browser": true,
-    "commonjs": true,
-    "es6": true,
-    "es2017": true,
-    "es2020": true,
-    "node": true,
-    "worker": true
-  },
-  "extends": [
-    "eslint:recommended",
-    "plugin:import/recommended",
-    "plugin:import/typescript",
-    "plugin:jsx-a11y/recommended",
-    "plugin:react/recommended",
-    "plugin:react/jsx-runtime",
-    "plugin:react-hooks/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "prettier"
-  ],
-  "plugins": [
-    "@typescript-eslint",
-    "import",
-    "jsx-a11y",
-    "react",
-    "react-hooks"
-  ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaFeatures": {
-      "ecmaVersion": 11,
-      "jsx": true
-    },
-    "requireConfigFile": false,
-    "sourceType": "module"
-  },
-  "rules": {
+[
+  {
     "no-var": "error",
-    "no-whitespace-before-property": "error",
     "object-shorthand": [
       "error",
       "always",
@@ -48,6 +11,23 @@ exports[`ESLint configuration > should exist 1`] = `
     ],
     "padding-line-between-statements": [
       "error",
+      {
+        "blankLine": "never",
+        "prev": "import",
+        "next": "import"
+      },
+      {
+        "blankLine": "always",
+        "prev": "import",
+        "next": [
+          "block-like",
+          "class",
+          "const",
+          "export",
+          "expression",
+          "let"
+        ]
+      },
       {
         "blankLine": "always",
         "prev": [
@@ -77,66 +57,16 @@ exports[`ESLint configuration > should exist 1`] = `
         ]
       }
     ],
-    "quote-props": [
-      "error",
-      "as-needed",
-      {
-        "keywords": true
-      }
-    ],
-    "quotes": [
-      "error",
-      "single",
-      {
-        "allowTemplateLiterals": true
-      }
-    ],
+    "prefer-const": "error",
     "sort-imports": [
       "error",
       {
         "ignoreCase": true,
         "ignoreDeclarationSort": true
       }
-    ],
-    "import/newline-after-import": "error",
-    "import/no-dynamic-require": "error",
-    "import/no-mutable-exports": "error",
-    "import/no-unresolved": "off",
-    "import/order": [
-      "error",
-      {
-        "alphabetize": {
-          "caseInsensitive": true,
-          "order": "asc"
-        },
-        "groups": [
-          "builtin",
-          "external",
-          "internal",
-          "parent",
-          "sibling",
-          "index"
-        ],
-        "newlines-between": "always"
-      }
-    ],
-    "jsx-a11y/no-onchange": "off",
-    "react/self-closing-comp": "error"
+    ]
   },
-  "overrides": [
-    {
-      "files": [
-        "*.js"
-      ],
-      "rules": {
-        "@typescript-eslint/no-var-requires": "off"
-      }
-    }
-  ],
-  "settings": {
-    "react": {
-      "version": "latest"
-    }
-  }
-}
+  {},
+  {}
+]
 `;

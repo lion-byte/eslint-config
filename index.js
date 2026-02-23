@@ -1,3 +1,3 @@
-import config from './.eslintrc.json' with { type: 'json' }
+import config from './eslint.config.mjs'
 
 export default config
