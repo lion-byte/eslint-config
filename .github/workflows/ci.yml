@@ -1,6 +1,13 @@
 name: CI
 on:
-  - push
+  push:
+    branches:
+      - main
+      - next
+  pull_request:
+    branches:
+      - '**'
+  merge_group:
 
 jobs:
   test:
