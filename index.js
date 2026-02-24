@@ -1,3 +1,3 @@
-const config = require('./.eslintrc.json')
+import config from './eslint.config.mjs'
 
-module.exports = config
+export default config

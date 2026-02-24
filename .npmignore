@@ -1,0 +1,12 @@
+.editorconfig
+.gitattributes
+.github/
+.husky/
+.lintstagedrc
+.prettierrc
+.vscode/
+*.tgz
+CODE_OF_CONDUCT.md
+coverage/
+release.config.mjs
+test/

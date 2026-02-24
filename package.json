@@ -1,17 +1,17 @@
 {
   "name": "@lionbyte/eslint-config",
-  "version": "2.0.0",
+  "version": "3.0.0-next.1",
   "description": "ESLint config for personal projects",
   "scripts": {
     "format": "npm run prettier && npm run lint -- --fix",
-    "lint": "eslint --ignore-path .gitignore .",
-    "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|yml|yaml|css|less|ts|md|graphql|mdx)\"",
+    "lint": "eslint",
+    "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(json|yml|yaml|css|less|md|graphql|mdx)\"",
     "start": "node .",
-    "test": "npm run lint && jest --coverage",
-    "semantic-release": "semantic-release"
+    "test": "npm run lint && node --test",
+    "semantic-release": "semantic-release",
+    "prepare": "husky"
   },
   "license": "MIT",
-  "main": "index.js",
   "author": "Mark Hernandez <mark@lion-byte.com>",
   "repository": {
     "type": "git",
@@ -20,41 +20,38 @@
   "publishConfig": {
     "access": "public"
   },
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./index.js"
+    }
+  },
   "engines": {
-    "node": ">=14.17.4"
+    "node": ">=22.21.1"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "^6.0.1",
+    "@eslint/js": "^10.0.1",
+    "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "@typescript-eslint/eslint-plugin": "^5.6.0",
-    "@typescript-eslint/parser": "^5.6.0",
-    "eslint": "^8.4.1",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jest": "^25.3.0",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-react": "^7.27.1",
-    "eslint-plugin-react-hooks": "^4.3.0",
-    "husky": "^4.2.5",
-    "jest": "^27.4.3",
-    "lint-staged": "^12.1.2",
-    "prettier": "^2.5.1",
-    "semantic-release": "^18.0.1",
-    "typescript": "^4.5.3"
+    "eslint": "^10.0.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "globals": "^17.3.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.8.1",
+    "semantic-release": "^25.0.3",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.56.1"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": ">=5.6.0",
-    "@typescript-eslint/parser": ">=5.6.0",
-    "eslint": ">=8.0.0",
-    "eslint-config-prettier": ">=8.3.0",
-    "eslint-plugin-import": ">=2.25.3",
-    "eslint-plugin-jest": ">=25.3.0",
-    "eslint-plugin-jsx-a11y": ">=6.5.1",
-    "eslint-plugin-node": ">=11.1.0",
-    "eslint-plugin-react": ">=7.27.1",
-    "eslint-plugin-react-hooks": ">=4.3.0",
-    "prettier": "*",
-    "typescript": ">=4.5.3"
+    "@eslint/js": "^10",
+    "eslint": "^10",
+    "eslint-config-prettier": "^10",
+    "eslint-plugin-prettier": "^5",
+    "globals": "^17",
+    "prettier": "^3",
+    "typescript": "^5",
+    "typescript-eslint": "^8"
   }
 }
