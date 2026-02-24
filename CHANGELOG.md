@@ -1,3 +1,10 @@
+# [2.1.0-next.1](https://github.com/lion-byte/eslint-config/compare/v2.0.0...v2.1.0-next.1) (2026-02-24)
+
+### Features
+
+- Remove Jest in ESLint config and dev testing ([8f43835](https://github.com/lion-byte/eslint-config/commit/8f43835afd9b8330d6b3be39a01e7e7125f2ab42))
+- Update to ESLint 10 ([d3ff4af](https://github.com/lion-byte/eslint-config/commit/d3ff4afbfe4f9fbd88eb26487cea689e0108b2f6))
+
 # [2.0.0](https://github.com/lion-byte/eslint-config/compare/v1.9.0...v2.0.0) (2021-12-19)
 
 ### Features
