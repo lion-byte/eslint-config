@@ -1,3 +1,9 @@
+# [3.1.0-next.1](https://github.com/lion-byte/eslint-config/compare/v3.0.0...v3.1.0-next.1) (2026-07-26)
+
+### Features
+
+- update dependencies ([841bb13](https://github.com/lion-byte/eslint-config/commit/841bb13a356aa1400ec73edef3a7f1a043349bef))
+
 # [3.0.0](https://github.com/lion-byte/eslint-config/compare/v2.0.0...v3.0.0) (2026-02-24)
 
 ### doc
