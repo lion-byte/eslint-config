@@ -1,4 +1,3 @@
-/** @type {import('semantic-release').GlobalConfig} */
 export default {
   branches: [{ name: 'main' }, { name: 'next', prerelease: true }],
   plugins: [
